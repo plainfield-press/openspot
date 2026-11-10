@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>OpenSpot Alerts — We watch sold-out bookings so you don't have to</title>
-<meta name="description" content="Hourly checks on sold-out campsites, DMV and visa appointments, classes and events. Get a message the hour a spot opens. $10 per watch per month.">
+<meta name="description" content="A proposed availability-alert service. No booking pages are being monitored for customers, and alerts are not live.">
 <style>
   :root{ --bg:#101613; --panel:#182019; --ink:#f2ead9; --muted:#a8b0a2; --amber:#e8a33d; --line:#2c3a2e; }
   *{box-sizing:border-box}
@@ -60,80 +60,7 @@
     h1{font-size:1.65rem}
   }
 </style>
-</head>
-<body>
-<header><div class="wrap">
+<style>.honest{max-width:820px;margin:0 auto;padding:44px 24px 60px;line-height:1.7}.honest h1{font-size:clamp(28px,4vw,44px);line-height:1.18;max-width:24ch;margin:0 0 24px;text-align:left;color:#14877a}.honest h2{font-size:21px;letter-spacing:0;text-transform:none;text-align:left;margin:28px 0 12px;color:#14877a}.honest p{margin:14px 0;max-width:65ch}.honest .state{border-left:4px solid #14877a;padding:12px 18px;background:#fff;color:#222}.honest a{color:#14877a;overflow-wrap:anywhere}.honest .interest{display:inline-block;padding:12px 18px;margin:12px 0;background:#14877a;color:#fff;text-decoration:none}.honest footer{font-size:14px;color:#555;margin-top:32px}.honest .label{font:600 12px system-ui;letter-spacing:.12em;text-transform:uppercase;color:#14877a} .honest footer{color:#c9d3cb}</style></head>
+<body><header><div class="wrap">
   <div class="brand"><span class="statusdot"></span>Open<b>Spot</b> Alerts</div>
-</div></header>
-
-<div class="wrap">
-  <section class="hero">
-    <h1>Sold out everywhere?<br>We watch the page. <em>You get the spot.</em></h1>
-    <p class="sub">Campsites, DMV appointments, visa slots, classes, permits. Someone cancels every day - the opening usually lasts minutes. We check the official booking page every hour and message you the moment a spot you want appears.</p>
-  </section>
-
-  <section class="rail">
-    <div><span class="n">01 / NAME IT</span>Tell us the exact booking - the campground, the office, the consulate - and the dates you can take.</div>
-    <div><span class="n">02 / WE WATCH</span>We check the official page every hour, day and night, until your window closes.</div>
-    <div><span class="n">03 / YOU BOOK</span>The hour a match opens, you get a message with the direct link. You book it yourself - we never touch your accounts.</div>
-  </section>
-
-  <section class="coverage">
-    <h2>What people watch with us</h2>
-    <div class="tags">
-      <span class="tag">National park campsites</span><span class="tag">State park cabins</span>
-      <span class="tag">DMV appointments</span><span class="tag">US visa interview slots</span>
-      <span class="tag">Passport office slots</span><span class="tag">Sold-out classes</span>
-      <span class="tag">Permit lotteries</span><span class="tag">Event restocks</span>
-    </div>
-  </section>
-
-  <section class="offer">
-    <span class="price">$10</span><span class="per">per watch / month &middot; cancel anytime</span>
-    <ul>
-      <li>One watch = one booking page, your dates</li>
-      <li>Checks every hour, around the clock</li>
-      <li>Alert with the direct booking link the hour a match appears</li>
-      <li>You always book yourself - we never hold spots, never take logins</li>
-    </ul>
-    <button type="button" class="buy" id="buybtn">Start a watch - $10/mo</button>
-    <div class="fine">No charge today. See what happens when you click - we keep it honest.</div>
-  </section>
-
-  <footer>
-    <p>OpenSpot Alerts is an independent monitoring service. We are not affiliated with any park agency, DMV, consulate, or booking platform, and we cannot guarantee an opening will appear - only that if one does, you'll know within the hour.</p>
-    <p>&copy; 2026 OpenSpot Alerts.</p>
-  </footer>
-</div>
-
-<div class="modal" id="buymodal" role="dialog" aria-modal="true">
-  <div class="card">
-    <h3>We're not taking payment yet</h3>
-    <p>OpenSpot Alerts is a new service and we bring on early customers one at a time. To join the early list, email <a href="mailto:mfcyxd@mail.instinct.com" id="waitlistlink">mfcyxd@mail.instinct.com</a> with what you want watched and your dates - first watches start free while we set up billing. Nothing is charged on this page.</p>
-    <button type="button" class="close" id="buyclose">Close</button>
-  </div>
-</div>
-
-<script>
-function track(what){
-  try{
-    if(window.goatcounter && window.goatcounter.count){
-      window.goatcounter.count({path: what, title: what, event: true});
-    }
-    var k = 'os_' + what;
-    localStorage.setItem(k, (parseInt(localStorage.getItem(k)||'0',10)+1).toString());
-  }catch(e){}
-}
-var modal = document.getElementById('buymodal');
-document.getElementById('buybtn').addEventListener('click', function(){
-  track('buy-intent');
-  modal.classList.add('open');
-});
-document.getElementById('buyclose').addEventListener('click', function(){ modal.classList.remove('open'); });
-modal.addEventListener('click', function(e){ if(e.target === modal){ modal.classList.remove('open'); } });
-var wl = document.getElementById('waitlistlink');
-if(wl){ wl.addEventListener('click', function(){ track('waitlist-click'); }); }
-</script>
-<script data-goatcounter="https://openspot.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
-</body>
-</html>
+</div></header><main class="honest"><div class="label">OpenSpot Alerts | Prelaunch</div><h1>Watching for an opening is a problem worth testing.</h1><p class="state">A proposed availability-alert service. No booking pages are being monitored for customers, and alerts are not live. No paying customers are claimed. Nothing is for sale on this page.</p><h2>No live watch or customer example yet</h2><p>We have not published a verified availability alert. Invented openings and customer stories are not shown as evidence. Any future watch must use an allowed source and an agreed check frequency.</p><p>There is no guarantee of an opening, notification time or booking. This page cannot reserve anything.</p><h2>Interest only, not an order</h2><p>Proposed price: $10 per watch/month. This is an unvalidated test price, not an active plan. No payment is collected, no work starts by clicking, and no launch date or delivery time is promised.</p><a class="interest" href="mailto:mfcyxd@mail.instinct.com?subject=openspot%20interest">Email a question or express interest</a><p>The link opens your email app. You decide whether to send. Expressing interest does not create a subscription, order or obligation.</p><footer>Prelaunch status checked November 10, 2026. We distinguish source research, interest, customer work and revenue. They are not interchangeable.</footer></main><script data-goatcounter="https://openspot.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script></body></html>
